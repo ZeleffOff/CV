@@ -5,3 +5,11 @@
   --secondary-color: #dbc2a4;
   --tertiary-color: #2c1d27;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Lato", sans-serif;
+}
