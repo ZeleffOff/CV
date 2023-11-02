@@ -3,6 +3,14 @@ body {
   justify-content: center;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 .cv {
   background-color: var(--primary-color);
   width: 1160px;
@@ -23,7 +31,7 @@ body {
   flex-direction: column;
 
   margin: 40px;
-  margin-left: 110px;
+  margin-left: 130px;
 }
 .cv__header__person figure {
   width: 100px;
@@ -33,6 +41,9 @@ body {
   width: 100%;
   border-radius: 50%;
   box-shadow: 0 0 30px #000;
+}
+.cv__header__person figure a:hover {
+  cursor: zoom-in;
 }
 .cv__header__name {
   font-size: 2rem;
@@ -77,8 +88,14 @@ body {
 }
 .aside p,
 .aside ul {
-  padding: 20px;
+  padding: 30px 20px;
+  padding-left: 20px;
+}
+.aside ul {
   padding-left: 30px;
+}
+.aside:first-child p {
+  text-indent: 30px;
 }
 
 /* Main */
@@ -91,11 +108,15 @@ body {
 .cv__main .cv__body__title {
   border-left: 8px solid var(--primary-color);
 }
-.cv__content__box {
+.cv__content__box:hover {
+  border-right: 3px solid var(--primary-color);
+}
+.cv__content__box,
+.cv__content:last-child .cv__body__title {
   margin-bottom: 20px; /* Ajout d'une marge  */
 }
 .cv__content__box ul {
-  padding: 20px 35px;
+  padding: 10px 50px;
 }
 .cv__content__box p {
   padding: 10px 0;
@@ -122,6 +143,9 @@ body {
 }
 .footer__socials img {
   width: 40px;
+}
+.footer__socials img:hover {
+  opacity: 0.8;
 }
 .footer__description {
   color: #fff;
