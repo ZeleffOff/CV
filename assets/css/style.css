@@ -78,7 +78,13 @@ body {
 .aside p,
 .aside ul {
   padding: 20px;
+  padding-left: 20px;
+}
+.aside ul {
   padding-left: 30px;
+}
+.aside:first-child p {
+  text-indent: 30px;
 }
 
 /* Main */
