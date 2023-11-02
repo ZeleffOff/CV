@@ -1,132 +1,151 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV</title>
 
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <section class="cv">
-      <!-- Haut du CV -->
-      <section class="cv__header">
-        <div class="cv__header__person">
-          <figure>
-            <img src="./assets/img/profil.png" alt="Photo par défaut" />
-          </figure>
-          <h1 class="cv__header__name">Raphaël</h1>
-          <p class="cv__header__job">Développeur web junior</p>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV en ligne de Raphaël">
 
-        <div class="cv__header__details">
+  <title>Raphaël - CV</title>
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <main class="cv">
+    <!-- Haut du CV -->
+    <section class="cv__header">
+      <div class="cv__header__person">
+        <figure>
+          <a href="./assets/img/profil.png">
+            <img src="./assets/img/profil.png" alt="Photo par défaut">
+          </a>
+        </figure>
+        <h1 class="cv__header__name">Raphaël</h1>
+        <p class="cv__header__job">Développeur web junior</p>
+      </div>
+
+      <div class="cv__header__details">
+        <!-- Lien Google Map -->
+        <a href="https://maps.app.goo.gl/T5bqCV9XwhneVKu68" target="_blank">
           <p>
             12 Rue des Oliviers
-            <br />
+            <br>
             53200 La Roche-Neuville
           </p>
+        </a>
 
+        <!-- Lien email -->
+        <a href="mailto:jane.doe@gmail.com">
           <p>jane.doe@gmail.com</p>
+        </a>
 
+        <!-- Appel téléphonique -->
+        <a href="tel:06123456789">
           <p>06123456789</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Barre gauche du CV -->
+    <section class="cv__body">
+      <aside class="aside">
+        <!-- Boite aside (A propos) -->
+        <div class="aside__box">
+          <h2 class="cv__body__title">A propos</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi odit
+            dolorum eligendi, sint expedita illo quisquam quaerat nobis harum
+            a officiis voluptatibus quae reprehenderit, rem enim cupiditate?
+            Voluptate, dolorum perspiciatis.
+          </p>
         </div>
-      </section>
 
-      <!-- Barre gauche du CV -->
-      <section class="cv__body">
-        <aside class="aside">
-          <!-- Boite aside (A propos) -->
-          <div class="aside__box">
-            <h2 class="cv__body__title">A propos</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi odit
-              dolorum eligendi, sint expedita illo quisquam quaerat nobis harum
-              a officiis voluptatibus quae reprehenderit, rem enim cupiditate?
-              Voluptate, dolorum perspiciatis.
-            </p>
-          </div>
+        <!-- Boite aside (Langues parlées) -->
+        <div class="aside__box">
+          <h2 class="cv__body__title">Langues parlées</h2>
+          <ul>
+            <li>Français - Langue maternelle</li>
+            <li>Anglais - Intermédiaire</li>
+            <li>Espagnol - Débutant</li>
+          </ul>
+        </div>
 
-          <!-- Boite aside (Langues parlées) -->
-          <div class="aside__box">
-            <h2 class="cv__body__title">Langues parlées</h2>
+        <!-- Boite aside (Centre d'intérêt) -->
+        <div class="aside__box">
+          <h2 class="cv__body__title">Centre d'interêt</h2>
+          <ul>
+            <li>Chant</li>
+            <li>Fitness</li>
+            <li>Randonnée</li>
+            <li>Voyages</li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Corps du CV -->
+      <div class="cv__main">
+        <!-- Boite du corps (Expériences professionnelles) -->
+        <div class="cv__content">
+          <h2 class="cv__body__title">Expériences professionnelles</h2>
+          <div class="cv__content__box">
+            <h3 class="cv__content__subtitle">
+              Intitulé du poste chez Nom de l'entreprise
+            </h3>
+            <p>Du XXX au XXX</p>
             <ul>
-              <li>Français - Langue maternelle</li>
-              <li>Anglais - Intermédiaire</li>
-              <li>Espagnol - Débutant</li>
+              <li>Mission 1...</li>
+              <li>Mission 2...</li>
+              <li>Mission 3...</li>
             </ul>
           </div>
 
-          <!-- Boite aside (Centre d'intérêt) -->
-          <div class="aside__box">
-            <h2 class="cv__body__title">Centre d'interêt</h2>
+          <div class="cv__content__box">
+            <h3 class="cv__content__subtitle">
+              Intitulé du poste chez Nom de l'entreprise
+            </h3>
+            <p>Du XXX au XXX</p>
             <ul>
-              <li>Chant</li>
-              <li>Fitness</li>
-              <li>Randonnée</li>
-              <li>Voyages</li>
+              <li>Mission 1...</li>
+              <li>Mission 2...</li>
+              <li>Mission 3...</li>
+              <li>Mission 4...</li>
             </ul>
           </div>
-        </aside>
 
-        <!-- Corps du CV -->
-        <div class="cv__main">
-          <!-- Boite du corps (Expériences professionnelles) -->
-          <div class="cv__content">
-            <h2 class="cv__body__title">Expériences professionnelles</h2>
-            <div class="cv__content__box">
-              <h3 class="cv__content__subtitle">
-                Intitulé du poste chez Nom de l'entreprise
-              </h3>
-              <p>Du XXX au XXX</p>
-              <ul>
-                <li>Mission 1...</li>
-                <li>Mission 2...</li>
-                <li>Mission 3...</li>
-              </ul>
-            </div>
-            <div class="cv__content__box">
-              <h3 class="cv__content__subtitle">
-                Intitulé du poste chez Nom de l'entreprise
-              </h3>
-              <p>Du XXX au XXX</p>
-              <ul>
-                <li>Mission 1...</li>
-                <li>Mission 2...</li>
-                <li>Mission 3...</li>
-                <li>Mission 4...</li>
-              </ul>
-            </div>
-            <div class="cv__content__box">
-              <h3 class="cv__content__subtitle">
-                Intitulé du poste chez Nom de l'entreprise
-              </h3>
-              <p>Du XXX au XXX</p>
-              <ul>
-                <li>Mission 1...</li>
-                <li>Mission 2...</li>
-              </ul>
-            </div>
+          <div class="cv__content__box">
+            <h3 class="cv__content__subtitle">
+              Intitulé du poste chez Nom de l'entreprise
+            </h3>
+            <p>Du XXX au XXX</p>
+            <ul>
+              <li>Mission 1...</li>
+              <li>Mission 2...</li>
+            </ul>
           </div>
+        </div>
 
-          <!-- Boite du corps (Diplomes/Formations) -->
-          <div class="cv__content">
-            <h2 class="cv__body__title">Diplômes/Formations</h2>
-            <div class="cv__content__box">
-              <h3 class="cv__content__subtitle">Diplome/Formation n*1</h3>
-              <p>Du XXX au XXX</p>
-              <p>Nom de l'école</p>
-            </div>
-            <div class="cv__content__box">
-              <h3 class="cv__content__subtitle">Diplome/Formation n*2</h3>
-              <p>Du XXX au XXX</p>
-              <p>Nom de l'école</p>
-            </div>
+        <!-- Boite du corps (Diplomes/Formations) -->
+        <div class="cv__content">
+          <h2 class="cv__body__title">Diplômes/Formations</h2>
+          <div class="cv__content__box">
+            <h3 class="cv__content__subtitle">Diplome/Formation n*1</h3>
+            <p>Du XXX au XXX</p>
+            <p>Nom de l'école</p>
           </div>
+          <div class="cv__content__box">
+            <h3 class="cv__content__subtitle">Diplome/Formation n*2</h3>
+            <p>Du XXX au XXX</p>
+            <p>Nom de l'école</p>
+          </div>
+        </div>
 
-          <!-- Boite du corps (Compétences) -->
-          <div class="cv__content">
-            <h2 class="cv__body__title">Compétences</h2>
+        <!-- Boite du corps (Compétences) -->
+        <div class="cv__content">
+          <h2 class="cv__body__title">Compétences</h2>
+          <div class="cv__content__box">
             <ul>
               <li>HTML 5 - Expert</li>
               <li>CSS 3 - Intermédiaire</li>
@@ -135,21 +154,23 @@
             </ul>
           </div>
         </div>
-      </section>
-
-      <!-- Pied de page du CV -->
-      <footer class="footer">
-        <div class="footer__socials">
-          <img src="./assets/img/linkedin.png" alt="Linkedin logo" />
-          <img src="./assets/img/twitter.png" alt="Twitter logo" />
-          <img src="./assets/img/github.png" alt="Github" />
-        </div>
-        <div>
-          <p class="footer__description">
-            Dernière mise à jour le 02 novembre 2023.
-          </p>
-        </div>
-      </footer>
+      </div>
     </section>
-  </body>
+
+    <!-- Pied de page du CV -->
+    <footer class="footer">
+      <div class="footer__socials">
+        <a href="https://linkedin.fr"><img src="./assets/img/linkedin.png" alt="Linkedin logo"></a>
+        <a href="https://twitter.fr"><img src="./assets/img/twitter.png" alt="Twitter logo"></a>
+        <a href="https://github.com"><img src="./assets/img/github.png" alt="Github"></a>
+      </div>
+      <div>
+        <p class="footer__description">
+          Dernière mise à jour le 02 novembre 2023.
+        </p>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
